@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72a73b06a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+          <h2><span>K</span>arina. </h2>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hii, I'm <span>Karina</span><br> From India</h1>
+        </div>
+    </div>
+  </div>  
+  <!-- ---------------------about---------------------- -->
+  <div id="about">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/Karinabg.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About me</h1>
+        <p>Hey! I am a final semester student pursuing my Bachelor's degree in Computer Science and Engineering from Punjab Technical University. My expertise in crafting responsive and engaging websites, coupled with a solid grasp of HTML, CSS, JavaScript, and php, empowers me to bring digital ideas to life. With an insatiable curiosity and a commitment to elegant design, I'm poised to contribute my skills and enthusiasm to a forward-looking team.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('project')">Projects</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <!-- <ul>
+            <li><span>UI/Ux</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Designing Web app interfaces</li>
+            <li><span>App Development</span><br>Designing Web app interfaces</li>
+          </ul> -->
+               <p>HTML</p>
+              <div class="containers">
+                <div class="skills html">95%</div>
+              </div>
+
+              <p>C & C++ </p>
+              <div class="containers">
+                <div class="skills c">90%</div>
+              </div>
+
+              <p>CSS</p>
+              <div class="containers">
+                <div class="skills css">83%</div>
+              </div>
+
+              <p>Python</p>
+              <div class="containers">
+                <div class="skills python">79%</div>
+              </div>
+
+              <p>JavaScript</p>
+              <div class="containers">
+                <div class="skills js">67%</div>
+              </div>
+
+              <p>PHP</p>
+              <div class="containers">
+                <div class="skills php">63%</div>
+              </div>
+        </div>
+
+        <div class="tab-contents" id="project" >
+          <ul>
+            <li>
+              <span>Sikshalay</span><br>Developed "SIKSHALAY," a PHP-based school management system hosted on XAMPP, enabling seamless interaction between students, teachers, and parents. Implemented features for easy access to assignments, notes, holidays, and homework submission. Designed user-friendly interface, ensuring 24/7 availability, efficient communication, and remote Learning capabilities. Received positive feedback for enhancing school activities management and fostering collaborative education.
+            </li>
+            <br>
+            <li>
+              <span>Royal Hotel</span><br>Created "ROYAL HOTEL" project utilizing PHP, HTML5, CSS, JS, andMySQL on XAMPP, aimed at streamlining hotel booking processes. Developed user-friendly interface offering customer registration, login, and seamless room booking. Implemented admin functionalities for hotel and room management, booking approvals, and user viewing. Project showcases effective hotelier-customer interaction, enhancing booking efficiency through real-time availability and multimedia-supported listings.
+            </li>
+            <br>
+            <li>
+              <span>Portfolio</span><br>You're currently on it! Built only using HTML, CSS and JS , this portfolio website showcases my skills, projects, and a glimpse into my tech journey.
+            </li>
+            <br>
+            <li>
+              <span>Temperature Converter</span><br>This web application is built only using HTML, CSS and JS , this website convert the Temperature unit like degree celcius to degree Fahrenheit & Kelvin and vice-versa.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <div class="education-item">
+            <h2><span>CT Institute Of Engineering Management & Technology</span></h2>
+            <p>Computer Science Engineering</p>
+            <pre>2020 - 2024          85.57%</pre>
+            </div>
+            <div class="education-item">
+            <h2><span>Sen. Sec. Residential School for Meritorious Students</span></h2>
+            <p>XII - Science</p>
+            <pre>2019 - 2020          93.77%</pre>
+            </div>
+            <div class="education-item">
+            <h2>Govt. Sen. Sec. Smart School </h2>
+            <p>Class X</p>
+            <pre>2017 - 2018          83.57%</pre>
+            </div>
+          <!-- 
+            <li><span>2020-24</span><br>B.Tech CSE at CTIEMT Jalandhar</li>
+            <br>
+            <li><span>2019-20</span><br>Class XII at SSRSMS Jalandhar</li>
+            <br>
+            <li><span>2017-18</span><br>Class X at GSSS Heran</li> 
+          -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------Services---------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Crafting captivating online experiences that seamlessly blend aesthetics and functionality, turning ideas into visually stunning and user-friendly websites.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Elevating user interactions through thoughtful UI/UX design, creating intuitive interfaces that engage and delight users while ensuring a smooth and satisfying digital journey.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <!-- <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto cupiditate saepe eligendi at! Doloribus deleniti culpa quibusdam quia exercitationem?</p>
+          <a href="#">Learn more</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------portfolio---------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1234567.jpg">
+          <div class="layer">
+            <h3>Royal Hotel</h3>
+            <p>It is a hotel management based web application, aimed at streamlining hotel booking processes.  </p>
+            <a href="https://github.com/Karina108/Royal-Hotel"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work22.png">
+          <div class="layer">
+            <h3>Sikshalay</h3>
+            <p>It enables seamless interaction between students, teachers, and parents.</p>
+            <a href="https://github.com/Karina108/Sikshalay"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work321.png">
+          <div class="layer">
+            <h3>Temperature Converter</h3>
+            <p>This web application convert the temperature unit.</p>
+            <a href="https://github.com/Karina108/Temperature-Converter"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+<!-- ----------------------------contact---------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> singhkarina90@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 7973742809</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/2003404-karina/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/karina108"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100057250654607"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/karinakarina4575/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/Karina's Resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" Class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright © 2023 Made with <i class="fa-solid fa-heart"></i> by Karina.  All right reserved</p>
+  </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+// Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }</script>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0"; 
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px"; 
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7u1QTWr_Fe49rBGySgOheTgbOYQTn_6bR6Not73iTbykPzvV3fJeP2wH60qeZZCw9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML= ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
